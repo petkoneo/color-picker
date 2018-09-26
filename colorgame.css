@@ -1,5 +1,7 @@
 body {
     background-color: black;
+    margin: 0;
+    font-family: Montserrat, Avenir, serif;
 }
 
 .square {
@@ -8,17 +10,64 @@ body {
     padding-bottom: 30%;
     float: left;
     margin: 1.66%;
+    border-radius: 20%;
+    transition: background-color 0.5s;
+    --webkit-transition: background-color 0.5s;
+    --moz-transition: background-color 0.5s;
 }
 
 .container {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 h1 {
+    text-align: center;
     color: white;
+    line-height: 1.1;
+    background-color: steelblue;
+    margin: 0;
+    padding: 20px 0;
+    text-transform: uppercase;
 }
 
-span {
+#color-display{
+    font-size: 200%
+}
+
+#stripe {
+    background-color: white;
+    height: 30px;
+    text-align: center;
+}
+
+.selected {
     color: white;
+    background: steelblue;
+}
+
+#message {
+    display: inline-block;
+    width: 20%;
+}
+
+button {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    color: steelblue;
+    letter-spacing: 1px;
+    font-size: inherit;
+    transition: all 0.5s;
+}
+
+button:hover {
+    color: white;
+    background: steelblue;
+}
+
+button:focus {
+    outline:0;
 }
